@@ -49,33 +49,36 @@ hr {
   margin: 0;
 }
 
-/* Design Home Page */
-/* ===== CALLOUT SECTION ===== */
+/* ===============================
+   🌼 UNIVERSAL CALLOUT SECTION
+=============================== */
 .callout {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(135deg, #bbe8c7, #ffffff); /* lembut hijau ke putih */
-  padding: 60px 60px;
-  min-height: 50vh;
+  background: linear-gradient(135deg, #bbe8c7, #ffffff);
+  padding: 60px;
+  margin: 40px 60px;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  margin: 40px 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.callout-content h1,
+.callout-content h2 {
+  color: #3bb273;
+  font-weight: 700;
+  text-align: left;
 }
 
 .callout-content h1 {
-  color: #3bb273; /* hijau lembut */
   font-size: 50px;
-  font-weight: 700;
-  text-align: left;
 }
 
 .callout-content h2 {
-  color: #3bb273; /* hijau lembut */
   font-size: 30px;
-  margin-bottom: 30px;
-  font-weight: 700;
-  text-align: left;
+  margin-bottom: 20px;
 }
 
 .callout-content p {
@@ -85,51 +88,163 @@ hr {
   text-align: left;
 }
 
-.callout-image {
-  text-align: right;
-}
-
-/* Design My Profile Page */
-.about-me {
-   background: linear-gradient(135deg, #bbe8c7, #ffffff); /* lembut pink-putih */
-  flex-direction: row-reverse; /* biar fotonya di kanan */
-}
-
-/* Pop-up effect untuk foto */
-.about-me .callout-image img {
-  width: 280px;
-  height: 280px;
+/* Pop-up effect untuk foto di semua section */
+.callout-image img {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 280px;
+  min-width: 200px;
+  height: auto;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(209, 107, 165, 0.3);
+  box-shadow: 0 10px 20px rgba(59, 178, 115, 0.3);
   transition: all 0.3s ease;
   transform: translateY(0);
 }
 
-.about-me .callout-image img:hover {
-  transform: translateY(-10px) scale(1.05); /* pop-up effect */
-  box-shadow: 0 15px 25px rgba(209, 107, 165, 0.4);
+.callout-image img:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 25px rgba(59, 178, 115, 0.4);
 }
 
+/* ===============================
+   💼 PORTFOLIO SECTION
+=============================== */
+.portfolio-section {
+  background: linear-gradient(135deg, #d9fbe2, #ffffff);
+  padding: 60px;
+  margin: 40px 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
 
-/* RESPONSIVE - biar bagus di HP */
+.portfolio-section h2 {
+  color: #3bb273;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(59, 178, 115, 0.2);
+}
+
+.portfolio-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-card h3 {
+  color: #3bb273;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.portfolio-card p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ===============================
+   💌 MESSAGE ME SECTION
+=============================== */
+.message-section {
+  background: linear-gradient(135deg, #bbe8c7, #ffffff);
+  padding: 60px;
+  margin: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.message-section h2 {
+  color: #3bb273;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.message-section p {
+  color: #444;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Tombol kirim */
+button[type="submit"] {
+  background: linear-gradient(135deg, #7B2FF7, #3bb273);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(59, 178, 115, 0.3);
+}
+
+/* ===============================
+   📱 RESPONSIVE
+=============================== */
 @media (max-width: 768px) {
   .callout {
     flex-direction: column;
     text-align: center;
-    padding: 60px 30px;
+    padding: 40px 20px;
+    margin: 20px;
   }
 
-  .callout-content h1 {
-    text-align: center;
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .callout-content p {
-    text-align: center;
+  .portfolio-card {
+    width: 90%;
   }
 
-  .callout-image {
-    margin-top: 30px;
+  .message-section {
+    margin: 20px;
+    padding: 40px 20px;
   }
 }
 
+.error-msg {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Design footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: rgb(119, 238, 177);
+} 

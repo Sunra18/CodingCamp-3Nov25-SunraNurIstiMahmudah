@@ -48,44 +48,94 @@
        <!-- My Profile Page -->
         <section id="my-profile-page" class="callout about-me">
             <div class="callout-content">
-                <h2>About Me 🌷</h2>
-                <p>Hi! Sunra is here!</p>
-                <p>Get to know more about me.</p>
+                <h2>About Me</h2>
+                <p>Halo! Aku Sunra, lulusan Teknik Sipil dari Institut Teknologi Sepuluh Nopember dengan ketertarikan besar pada dunia konstruksi, branding, dan komunikasi kreatif.
+                   Selama magang di PT Adhi Karya, aku belajar banyak tentang pengawasan mutu, perhitungan progres proyek, dan penyusunan dokumen kontrak.
+                   Selain di bidang teknik, aku juga aktif mengasah kemampuan menulis dan berorganisasi sebagai Kepala Divisi Jurnalisme di Society of Petroleum Engineers ITS SC, memimpin tim untuk menciptakan konten digital yang engaging dan berdampak.
+                   Aku percaya setiap proyek dan cerita punya makna — dan tugasku adalah membantu mewujudkannya lewat ide yang autentik, efisien, dan berkelanjutan. 🌱</p>
             </div>
 
             <div class="callout-image">
-                <img src="css/image/profile.png">
+                <img src="css/image/profile1.jpeg" style="border-radius: 25px;">
             </div>
         </section>
 
 
         <!-- Portfolio -->
-        <section id="portfolio-page" class="min-h-[500px] text-center">
-            <h2 class="text-xl font-bold">My Services</h2>
-            <p class="mt-2">What can I do for you?</p>
-            <p class="mt-2">Get to know more about how can I help your problem.</p>
+        <section id="portfolio-page" class="portfolio-section">
+            <h2>How can I help your business?</h2>
+
+            <div class="portfolio-container">
+                <!-- Card 1: Civil Engineering Task -->
+                <div class="portfolio-card">
+                    <img src="css/image/civil.webp" alt="Civil Engineering Task">
+                    <h3>Civil Engineering Support</h3>
+                    <p>Membantu perhitungan volume, quality control lapangan, dan penyusunan dokumen kontrak untuk proyek konstruksi.</p>
+                </div>
+
+                <!-- Card 2: Content Marketing Task -->
+                <div class="portfolio-card">
+                    <img src="css/image/marketing.jpeg" alt="Content Marketing Task">
+                    <h3>Content Marketing</h3>
+                    <p>Membuat strategi konten dan copywriting yang engaging untuk meningkatkan awareness dan interaksi di media sosial.</p>
+                </div>
+
+                <!-- Card 3: Administrative Task -->
+                <div class="portfolio-card">
+                    <img src="css/image/admin.jpeg" alt="Administrative Task">
+                    <h3>Administrative Assistance</h3>
+                    <p>Mengelola dokumen, menyusun laporan, dan memastikan sistem administrasi berjalan efisien dan teratur.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Message Me -->
-        <section  id="message-me-page" class="min-h-[500px] max-w-xl mx-auto">
-            <h2 class="text-xl font-bold">Interestes to work together?</h2>
-            <p class="mt-2">You can find me in through this app</p>
-            <p class="mt-2">Let me know by leaving a message through the form below</p>
+        <section  id="message-me-page" class="message-section">
+            <h2>Tertarik untuk bekerja sama?</h2>
+            <p>Aku akan senang sekali mendengar kabar darimu! Silakan tinggalkan pesan melalui form di bawah ini 💬</p>
 
-            <form action="" class="max-w-xl mx-auto">
+            <form class="max-w-xl mx-auto">
+                <!-- Nama -->
                 <div class="mb-4">
-                    <label class="block mb-1 font-semibold" for="name">Name:</label>
-                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" placeholder="Your name">
+                    <label class="block mb-1 font-semibold" for="name">Nama:</label>
+                    <input 
+                    class="w-full p-2 border rounded" 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Tulis namamu di sini" 
+                    required>
                 </div>
+
+                <!-- Email -->
                 <div class="mb-4">
                     <label class="block mb-1 font-semibold" for="email">Email:</label>
-                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" placeholder="Your email">
+                    <input 
+                    class="w-full p-2 border rounded" 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Masukkan emailmu (contoh: kamu@mail.com)" 
+                    required>
                 </div>
+
+                <!-- Pesan -->
                 <div class="mb-4">
-                    <label class="block mb-1 font-semibold" for="message">Message:</label>
-                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5" placeholder="Your message"></textarea>
+                    <label class="block mb-1 font-semibold" for="message">Pesan:</label>
+                    <textarea 
+                    class="w-full p-2 border rounded" 
+                    id="message" 
+                    name="message" 
+                    rows="5" 
+                    placeholder="Tulis pesanmu di sini..." 
+                    required>
+                    </textarea>
                 </div>
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send Message</button>
+
+                <!-- Tombol -->
+                <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded">
+                Send Message
+                </button>
             </form>
         </section>
     </main>
