@@ -5,9 +5,7 @@ function welcomeMessage() {
 
     if (name != null)   {
         document.getElementById("welcome-speech").innerHTML = "Hello " + name +"👋";
-    }
-
-    
+    } 
 }
 
 function valiadteForm() {

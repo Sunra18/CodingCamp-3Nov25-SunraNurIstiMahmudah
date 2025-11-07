@@ -37,7 +37,7 @@ nav a {
 /* Design navigation bar - hover */
 nav a:hover {
   background-color: rgb(208, 248, 236); 
-  color: #333);
+  color: #333;
   border-color: rgb(208, 248, 236);
 }
 
@@ -88,6 +88,30 @@ hr {
 .callout-image {
   text-align: right;
 }
+
+/* Design My Profile Page */
+.about-me {
+   background: linear-gradient(135deg, #bbe8c7, #ffffff); /* lembut pink-putih */
+  flex-direction: row-reverse; /* biar fotonya di kanan */
+}
+
+/* Pop-up effect untuk foto */
+.about-me .callout-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(209, 107, 165, 0.3);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.about-me .callout-image img:hover {
+  transform: translateY(-10px) scale(1.05); /* pop-up effect */
+  box-shadow: 0 15px 25px rgba(209, 107, 165, 0.4);
+}
+
+
 /* RESPONSIVE - biar bagus di HP */
 @media (max-width: 768px) {
   .callout {
@@ -108,3 +132,4 @@ hr {
     margin-top: 30px;
   }
 }
+
