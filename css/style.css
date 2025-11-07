@@ -1,15 +1,110 @@
+/* Design logo */
 .logo{
-    height: 75px;
-    width: 75px;
-    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(208, 248, 236);
     border-radius: 50%;
-    background-image: url("C:\Users\M. Arisa\Downloads\Jae.html");
-    background-size: contain;
+    background-image:url("image/logo.png");
+    background-size: cover;
 }
 
+/* Design header */
 .main-header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: rgb(119, 238, 177);
 } 
 
+/* Design navigation bar */
+nav{
+    display: flex;
+    gap: 5px; /* ini jarak antar tombolnya */
+}
+
+/* Design navigation bar */
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 18px;
+  border: 2px solid rgb(208, 248, 236);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Design navigation bar - hover */
+nav a:hover {
+  background-color: rgb(208, 248, 236); 
+  color: #333);
+  border-color: rgb(208, 248, 236);
+}
+
+/* Design line break */
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(29, 216, 119); 
+  margin: 0;
+}
+
+/* Design Home Page */
+/* ===== CALLOUT SECTION ===== */
+.callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #bbe8c7, #ffffff); /* lembut hijau ke putih */
+  padding: 60px 60px;
+  min-height: 50vh;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin: 40px 60px;
+}
+
+.callout-content h1 {
+  color: #3bb273; /* hijau lembut */
+  font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.callout-content h2 {
+  color: #3bb273; /* hijau lembut */
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.callout-content p {
+  color: #444;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.callout-image {
+  text-align: right;
+}
+/* RESPONSIVE - biar bagus di HP */
+@media (max-width: 768px) {
+  .callout {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+  }
+
+  .callout-content h1 {
+    text-align: center;
+  }
+
+  .callout-content p {
+    text-align: center;
+  }
+
+  .callout-image {
+    margin-top: 30px;
+  }
+}

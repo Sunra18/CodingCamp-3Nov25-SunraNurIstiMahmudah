@@ -4,8 +4,7 @@ function welcomeMessage() {
     let name = prompt("Please enter your name:");
 
     if (name != null)   {
-        document.getElementById("welcome-speech").innerHTML = "Hello " + name +", Welcome to My Portfolio!";
-        console.log("Hello " + name +", Welcome to My Portfolio!");
+        document.getElementById("welcome-speech").innerHTML = "Hello " + name +"👋";
     }
 
     
