@@ -1,4 +1,6 @@
-/* Design logo */
+/* ==========================
+    DESIGN LOGO HEADER
+=========================== */
 .logo{
     height: 100px;
     width: 100px;
@@ -8,7 +10,9 @@
     background-size: cover;
 }
 
-/* Design header */
+/* ===========================
+    DESIGN MAIN HEADER
+========================== */
 .main-header{
     display: flex;
     align-items: center;
@@ -17,13 +21,17 @@
     background-color: rgb(119, 238, 177);
 } 
 
-/* Design navigation bar */
+/* ===============================
+    UNIVERSAL NAVIGATION SECTION
+=============================== */
 nav{
     display: flex;
-    gap: 5px; /* ini jarak antar tombolnya */
+    gap: 5px;
 }
 
-/* Design navigation bar */
+/* ===============================
+    NAVIGATION BUTTON DESIGN
+=============================== */
 nav a {
   text-decoration: none;
   color: #333;
@@ -40,7 +48,9 @@ nav a:hover {
   border-color: rgb(208, 248, 236);
 }
 
-/* Design line break */
+/* ===============================
+    HORIZONTAL LINE DESIGN
+=============================== */
 hr {
   border: none;
   height: 2px;
@@ -49,7 +59,7 @@ hr {
 }
 
 /* ===============================
-   🌼 UNIVERSAL CALLOUT SECTION
+    UNIVERSAL CALLOUT SECTION
 =============================== */
 .callout {
   display: flex;
@@ -61,7 +71,6 @@ hr {
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   gap: 40px;
-  flex-wrap: wrap;
 }
 
 .callout-content h1,
@@ -90,7 +99,7 @@ hr {
 /* Pop-up effect untuk foto di semua section */
 .callout-image img {
   flex-shrink: 0;
-  width: 100%;
+  width: auto;
   max-width: 280px;
   min-width: 200px;
   height: auto;
@@ -101,13 +110,26 @@ hr {
   transform: translateY(0);
 }
 
+.callout-image-home img {
+  flex-shrink: 0;
+  width: auto;
+  max-width: 480px;
+  min-width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(59, 178, 115, 0.3);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+.callout-image-home img:hover,
 .callout-image img:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 15px 25px rgba(59, 178, 115, 0.4);
 }
 
 /* ===============================
-   💼 PORTFOLIO SECTION
+        PORTFOLIO SECTION
 =============================== */
 .portfolio-section {
   background: linear-gradient(135deg, #d9fbe2, #ffffff);
@@ -121,6 +143,7 @@ hr {
 .portfolio-section h2 {
   color: #3bb273;
   font-size: 30px;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 
@@ -156,6 +179,7 @@ hr {
 .portfolio-card h3 {
   color: #3bb273;
   font-size: 22px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
@@ -166,20 +190,21 @@ hr {
 }
 
 /* ===============================
-   💌 MESSAGE ME SECTION
+       MESSAGE ME SECTION
 =============================== */
 .message-section {
   background: linear-gradient(135deg, #bbe8c7, #ffffff);
-  padding: 60px;
-  margin: 40px 60px;
+  padding: 80px;
+  margin: 80px 80px;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  text-align: center;
+  text-align: left;
 }
 
 .message-section h2 {
   color: #3bb273;
   font-size: 28px;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
