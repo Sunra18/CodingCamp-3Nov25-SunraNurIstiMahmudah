@@ -214,7 +214,9 @@ hr {
   margin-bottom: 30px;
 }
 
-/* Tombol kirim */
+/* ==============================
+       SEND MESSAGE BUTTON
+=============================== */
 button[type="submit"] {
   background: linear-gradient(135deg, #7B2FF7, #3bb273);
   color: white;
@@ -231,8 +233,8 @@ button[type="submit"]:hover {
   box-shadow: 0 4px 10px rgba(59, 178, 115, 0.3);
 }
 
-/* ===============================
-   📱 RESPONSIVE
+/* ==============================
+       RESPONSIVE
 =============================== */
 @media (max-width: 768px) {
   .callout {
@@ -264,7 +266,9 @@ button[type="submit"]:hover {
   font-style: italic;
 }
 
-/* Design footer */
+/* ==============================
+       DESIGN FOOTER
+=============================== */
 footer{
     display: flex;
     align-items: center;
