@@ -34,7 +34,6 @@ nav a {
   transition: all 0.3s ease;
 }
 
-/* Design navigation bar - hover */
 nav a:hover {
   background-color: rgb(208, 248, 236); 
   color: #333;
